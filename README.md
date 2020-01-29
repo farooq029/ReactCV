@@ -1,2 +1,0 @@
-# ReactCV
-Created with CodeSandbox

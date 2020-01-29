@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  max-width: 1000px;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  background-image: url(https://i.picsum.photos/id/60/800/1200.jpg);
+}
+
+.container {
+  display: grid;
+  margin: 15px;
+  border: 4px solid black;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 5px;
+  grid-template-rows: 0.1fr 1fr 3fr 0.1fr;
+  background-color: white;
+}
+ul {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  padding: 0;
+}
+h1 {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+/* h2 {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  font-weight: 5;
+} */
+
+p {
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  font-weight: 300;
+  font-size: 13px;
+}
+h4 {
+  text-transform: uppercase;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.icon {
+  width: 10%;
+}
+.social-media {
+  padding-top: 30px;
+  display: grid;
+  grid-row-gap: 20px;
+}
+/* a {
+  text-decoration: inherit;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  color: #ff6d6d;
+} */
+.subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+dl {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", times, serif;
+}
+
+dt {
+  position: relative;
+  left: 0;
+  top: 1.1em;
+  font-weight: bold;
+}
+dd {
+  margin: 0 0 0 6em;
+  line-height: 1.4em;
+  padding: 0;
+  vertical-align: top;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+h3 {
+  margin-top: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+header {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.photo {
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  justify-items: center;
+  align-items: center;
+  /*background-color: blue;*/
+}
+.profile-img {
+  display: grid;
+  width: 200px;
+  height: 203px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #666;
+}
+.leftSideBar {
+  padding-left: 30px;
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+main {
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-right: 30px;
+  grid-column: 2/4;
+  grid-row: 2/4;
+  border-left: 1px solid black;
+  /*background-color: olive;*/
+}
+footer {
+  grid-column: 1/4;
+  grid-row: 4/5;
+  background-color: white;
+}
+
+.education {
+  padding-right: 20px;
+  grid-area: education;
+  display: grid;
+  /*background-color: purple;*/
+}
+
+.edu-list {
+  column-count: 2;
+}
+.exp-field {
+  line-height: 1;
+}
+.experience {
+  display: block;
+  grid-template-columns: 0.2fr 1fr 1fr;
+  /*background-color: yellow;*/
+}
+.subtitle {
+  grid-column-start: 1;
+  align-self: star;
+}
+.skills {
+  display: block;
+  /*background-color: pink;*/
+}
+.skill-list {
+  column-count: 2;
+}
+.ach {
+  display: grid;
+  /*background-color: grey;*/
+}
+.ach-list {
+  column-count: 2;
+}
+/* Container for skill bars */
+.containers {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+/* 
+.skill {
+  text-align: right; 
+  padding-top: 1px;
+  padding-bottom: 2px; 
+  color: transparent; 
+  font-size: 0.7rem;
+  line-height: 0.5em;
+}
+ */
+.illu {
+  width: 90%;
+  background-color: rgb(219, 198, 10);
+} /* Green */
+.html {
+  width: 50%;
+  background-color: #4caf50;
+} /* Green */
+.css {
+  width: 30%;
+  background-color: #2196f3;
+} /* Blue */
+.js {
+  width: 10%;
+  background-color: #f44336;
+} /* Red */
+.php {
+  width: 90%;
+  background-color: #808080;
+} /* Dark Grey */
+
+/** new stuff **/
+.resume-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.resume-item__title {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+
+.resume-item__title:before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff6d6d;
+  position: absolute;
+  margin-left: -26px;
+  margin-top: 10px;
+}
+
+.time-range-block {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.time-range-block__col1 {
+  display: block;
+  width: 70px;
+  overflow: hidden;
+}
+
+.time-range-block__col2 {
+  flex: 1;
+}
+
+.time-range-block__title {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.time-range-block__content * {
+  margin: 0;
+  color: #666;
+}
+
+.time-range-block__time {
+  font-weight: bold;
+}
+
+/** STARS css **/
+
+.checked {
+  color: orange;
+}
